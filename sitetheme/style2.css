@@ -1,0 +1,28 @@
+body {
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, Verdana, Arial, sans-serif, "ƒƒCƒŠƒI", Meiryo, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif; 
+	color: #666666;
+	background : #ffffff url(../bg_back1.gif);
+}
+
+a:link {
+	color: #336699;
+}
+
+a:active {
+	color: #FF9900;
+}
+
+a:hover {
+	color: #003399;
+}
+
+a:visited {
+	color: #CC3366;
+}
+
+td,th {
+	font-size: 0.8em;
+}

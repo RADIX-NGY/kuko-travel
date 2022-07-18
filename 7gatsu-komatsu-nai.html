@@ -1,0 +1,1498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 14.0.3.0 for Windows">
+<meta name="Description" content="������`���������������\7�`8��">
+<meta name="Keywords" content="������`,7��,�H�c��`,���c��`,�V��΋�`,�D�y,����`,������`,�i�`�k,�`�m�`,����,�x�m�R�É���`,�t�W�h���[���G�A���C��,�ߔe��`,����,�i�s�`">
+<title>����������7��</title>
+<link href="sitetheme/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="JavaScript">
+<!--HPB_SCRIPT_ROV_50
+//
+//  Licensed Materials - Property of IBM
+//  5724Y82
+//  (C) Copyright IBM Corp. 1995, 2009 All Rights Reserved.
+//
+
+// HpbImgPreload:
+//
+function HpbImgPreload()
+{
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC||isN6||isIE)
+  {
+    if (document.images)
+    {
+      var imgName = HpbImgPreload.arguments[0];
+      var cnt;
+      swImg[imgName] = new Array;
+      for (cnt = 1; cnt < HpbImgPreload.arguments.length; cnt++)
+      {
+        swImg[imgName][HpbImgPreload.arguments[cnt]] = new Image();
+        swImg[imgName][HpbImgPreload.arguments[cnt]].src = HpbImgPreload.arguments[cnt];
+      }
+    }
+  }
+}
+// HpbImgFind:
+//
+function HpbImgFind(doc, imgName)
+{
+  for (var i=0; i < doc.layers.length; i++)
+  {
+    var img = doc.layers[i].document.images[imgName];
+    if (!img) img = HpbImgFind(doc.layers[i], imgName);
+    if (img) return img;
+  }
+  return null;
+}
+// HpbImgSwap:
+//
+function HpbImgSwap(imgName, imgSrc)
+{
+  var appVer=parseInt(navigator.appVersion);
+  var isNC=false,isN6=false,isIE=false;
+  if (document.all && appVer >= 4) isIE=true; else
+    if (document.getElementById && appVer > 4) isN6=true; else
+      if (document.layers && appVer >= 4) isNC=true;
+  if (isNC||isN6||isIE)
+  {
+    if (document.images)
+    {
+      var img = document.images[imgName];
+      if (!img) img = HpbImgFind(document, imgName);
+      if (img) img.src = imgSrc;
+    }
+  }
+}
+var swImg; swImg=new Array;
+//-->
+</script><script type="text/javascript" language="JavaScript">
+<!--HPB_SCRIPT_PLD_50
+HpbImgPreload('HPB_ROLLOVER1', 'button11.gif', 'button114.gif');
+HpbImgPreload('HPB_ROLLOVER2', 'button2.gif', 'button23.gif');
+HpbImgPreload('HPB_ROLLOVER3', 'button31.gif', 'button311.gif');
+HpbImgPreload('HPB_ROLLOVER4', 'button41.gif', 'button411.gif');
+HpbImgPreload('HPB_ROLLOVER5', 'button51.gif', 'button511.gif');
+HpbImgPreload('HPB_ROLLOVER6', 'button61.gif', 'button611.gif');
+//-->
+</script><script>
+<!--HPB_SCRIPT_INFO_40
+//HPB_VFX_EVT Element:BODY Event:OnLoad Handler:HpbVfxinit('Layer1','HpbVfx0501','L010',0,0,0); 
+//HPB_VFX_PAR Element:BODY Event:OnLoad LayerID:Layer1 Entry:HpbVfx0501 Param:L010 1stDelay:0 NxtDelay:0 Loop:0 
+//-->
+</script><script type="text/javascript" language="JavaScript">
+<!--HPB_SCRIPT_VFX_40
+//
+//  Licensed Materials - Property of IBM
+//  5724Y82
+//  (C) Copyright IBM Corp. 1995, 2009 All Rights Reserved.
+//
+var layerId       =  0; var func          =  1; var effectPattern =  2; 
+var startTime     =  3; var nextLayerIdx  =  4; var nextStartTime =  5; 
+var intervalTime  =  6; var repeat        =  7; var endVisibility =  8;
+var posX          =  9; var posY          = 10; var posStartX     = 11;
+var posStartY     = 12; var posEndX       = 13; var posEndY       = 14;
+var stepX         = 15; var stepY         = 16; var frame         = 17;
+var accelerationX = 18; var accelerationY = 19; var angle         = 20;
+var fixedX        = 21; var fixedY        = 22; 
+
+var appVer = parseInt(navigator.appVersion);
+var isNC=false,isN6=false,isIE=false;
+if (document.all && appVer >= 4) isIE=true; else
+  if (document.getElementById && appVer > 4) isN6=true; else
+    if (document.layers && appVer >= 4) isNC=true;
+var elt;
+elt = new Array;
+var layerobj;
+layerobj = new Array;
+var lastobj;
+
+function HpbVfxinit() {
+  var w_str;
+  if (isNC||isN6||isIE) {
+    var n_div = arguments.length / 6;
+    for (var div = 0; div < n_div; div++) {
+      var args = 6 * div;
+      var arg1 = arguments[args];
+      var arg2 = arguments[args+1];
+      var arg3 = arguments[args+2];
+      var arg4 = arguments[args+3];
+      var arg5 = arguments[args+4];
+      var arg6 = arguments[args+5];
+      elt[div] = new Array(arg1,arg2,arg3,arg4,-1,arg5,0,arg6,true,-32767,-32767,-32767,-32767,-32767,-32767,-32767,-32767,40,1.0,1.0,0,-1,-1);
+  } }
+
+  if (isNC) {
+    for (i=0; i < elt.length; i++) {
+      w_str = "document." + elt[i][layerId];
+      layerobj[i] = eval(w_str);
+      if (layerobj[i]) {
+        layerobj[i].init = false;
+        layerobj[i].innerH = window.innerHeight;
+        layerobj[i].innerW = window.innerWidth;
+        layerobj[i].pos_x = layerobj[i].left;
+        layerobj[i].pos_y = layerobj[i].top;
+        layerobj[i].pos_w = layerobj[i].clip.width;
+        layerobj[i].pos_h = layerobj[i].clip.height;
+  } } }
+  if (isN6) {
+    for (i=0; i < elt.length; i++) {
+      layerobj[i] = document.getElementById(elt[i][layerId]);
+      if (layerobj[i]) {
+        layerobj[i].init = false;
+        layerobj[i].innerH = window.innerHeight;
+        layerobj[i].innerW = window.innerWidth;
+        layerobj[i].pos_x = parseInt(layerobj[i].style.left);
+        layerobj[i].pos_y = parseInt(layerobj[i].style.top);
+        layerobj[i].pos_w = parseInt(layerobj[i].style.width);
+        layerobj[i].pos_h = parseInt(layerobj[i].style.height);
+  } } }
+  if (isIE) {
+    for (i=0; i < elt.length; i++) {
+      w_str = "document.all.item(\"" + elt[i][layerId] + "\")";
+      if (eval(w_str)) {
+        w_str = "document.all.item(\"" + elt[i][layerId] + "\").style";
+        layerobj[i] = eval(w_str);
+        if (layerobj[i]) {
+          layerobj[i].init = false;
+          layerobj[i].innerH = document.body.clientHeight;
+          layerobj[i].innerW = document.body.clientWidth;
+          layerobj[i].pos_x = layerobj[i].pixelLeft;
+          layerobj[i].pos_y = layerobj[i].pixelTop;
+          layerobj[i].pos_w = layerobj[i].pixelWidth;
+          layerobj[i].pos_h = layerobj[i].pixelHeight;
+  } } } }
+
+  if (isNC||isN6||isIE) {
+    for (i=0; i < elt.length; i++) {
+      if (layerobj[i]) {
+        if (elt[i][posX] == -32767) elt[i][posX] = layerobj[i].pos_x;
+        if (elt[i][posY] == -32767) elt[i][posY] = layerobj[i].pos_y;
+        if (elt[i][effectPattern].charAt(0) == "A") {
+          if (elt[i][posX] != -32767) elt[i][posEndX] = elt[i][posX];
+          if (elt[i][posY] != -32767) elt[i][posEndY] = elt[i][posY];
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            if (elt[i][posY] != -32767) elt[i][posStartY] = elt[i][posY];
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            if (elt[i][posX] != -32767) elt[i][posStartX] = elt[i][posX];
+            elt[i][posStartY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "5") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            elt[i][posStartY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "8") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            elt[i][posStartY] = layerobj[i].innerH;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "B") {
+          if (elt[i][posX] != -32767) elt[i][posStartX] = elt[i][posX];
+          if (elt[i][posY] != -32767) elt[i][posStartY] = elt[i][posY];
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            if (elt[i][posY] != -32767) elt[i][posEndY] = elt[i][posY];
+          }
+          if (elt[i][effectPattern].charAt(1) == "4") {
+            if (elt[i][posX] != -32767) elt[i][posEndX] = elt[i][posX];
+            elt[i][posEndY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "6") {
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            elt[i][posEndY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "7") {
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            elt[i][posEndY] = layerobj[i].innerH;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "C") {
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][posStartX] = layerobj[i].innerW;
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            if (elt[i][posY] != -32767) {
+              elt[i][posStartY] = elt[i][posY];
+              elt[i][posEndY] = elt[i][posY];
+            }
+          }
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            elt[i][posEndX] = layerobj[i].innerW;
+            if (elt[i][posY] != -32767) {
+              elt[i][posStartY] = elt[i][posY];
+              elt[i][posEndY] = elt[i][posY];
+            }
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            if (elt[i][posX] != -32767) {
+              elt[i][posStartX] = elt[i][posX];
+              elt[i][posEndX] = elt[i][posX];
+            }
+            elt[i][posStartY] = layerobj[i].pos_h * -1;
+            elt[i][posEndY] = layerobj[i].innerH;
+          }
+          if (elt[i][effectPattern].charAt(1) == "4") {
+            if (elt[i][posX] != -32767) {
+              elt[i][posStartX] = elt[i][posX];
+              elt[i][posEndX] = elt[i][posX];
+            }
+            elt[i][posStartY] = layerobj[i].innerH;
+            elt[i][posEndY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "7") {
+            elt[i][posStartX] = layerobj[i].innerW;
+            elt[i][posStartY] = layerobj[i].pos_h * -1;
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            elt[i][posEndY] = layerobj[i].innerH;
+          }
+          if (elt[i][effectPattern].charAt(1) == "5") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            elt[i][posStartY] = layerobj[i].pos_h * -1;
+            elt[i][posEndX] = layerobj[i].innerW;
+            elt[i][posEndY] = layerobj[i].innerH;
+          }
+          if (elt[i][effectPattern].charAt(1) == "6") {
+            elt[i][posStartX] = layerobj[i].innerW;
+            elt[i][posStartY] = layerobj[i].innerH;
+            elt[i][posEndX] = layerobj[i].pos_w * -1;
+            elt[i][posEndY] = layerobj[i].pos_h * -1;
+          }
+          if (elt[i][effectPattern].charAt(1) == "8") {
+            elt[i][posStartX] = layerobj[i].pos_w * -1;
+            elt[i][posStartY] = layerobj[i].innerH;
+            elt[i][posEndX] = layerobj[i].innerW;
+            elt[i][posEndY] = layerobj[i].pos_h * -1;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "D") {
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][stepX] = 4;  elt[i][stepY] = 0;
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            elt[i][stepX] = 0;  elt[i][stepY] = 4;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "F") {
+          if (elt[i][effectPattern].charAt(1) == "4") {
+            if (elt[i][posX] != -32767) {
+              elt[i][posStartX] = elt[i][posX];
+              elt[i][posEndX] = elt[i][posX] + layerobj[i].pos_w;
+            }
+            if (elt[i][posY] != -32767) {
+              elt[i][posStartY] = elt[i][posY];
+              if (elt[i][effectPattern].charAt(3) == "1") elt[i][posEndY] = elt[i][posY] + 80;
+              if (elt[i][effectPattern].charAt(3) == "2") elt[i][posEndY] = elt[i][posY] + 160;
+              if (elt[i][effectPattern].charAt(3) == "3") elt[i][posEndY] = elt[i][posY] + 320;
+            }
+            elt[i][stepX] = 0;  elt[i][stepY] = 4;
+          }
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            if (elt[i][posX] != -32767) {
+              elt[i][posStartX] = elt[i][posX];
+              if (elt[i][effectPattern].charAt(3) == "1") elt[i][posEndX] = elt[i][posX] + 80;
+              if (elt[i][effectPattern].charAt(3) == "2") elt[i][posEndX] = elt[i][posX] + 160;
+              if (elt[i][effectPattern].charAt(3) == "3") elt[i][posEndX] = elt[i][posX] + 320;
+            }
+            if (elt[i][posY] != -32767) {
+              elt[i][posStartY] = elt[i][posY];
+              elt[i][posEndY] = elt[i][posY] + layerobj[i].pos_h;
+            }
+            elt[i][stepX] = 4;  elt[i][stepY] = 0;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "G") {
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][posStartX] = 0;
+            if (elt[i][effectPattern].charAt(3) == "1") elt[i][posStartY] = 80;
+            if (elt[i][effectPattern].charAt(3) == "2") elt[i][posStartY] = 160;
+            if (elt[i][effectPattern].charAt(3) == "3") elt[i][posStartY] = 320;
+            elt[i][posEndX] = 1;  elt[i][posEndY] = 1;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "H") {
+          if (elt[i][effectPattern].charAt(3) == "1") {
+            elt[i][stepX] = 8;  elt[i][stepY] = 8;
+          }
+          if (elt[i][effectPattern].charAt(3) == "2") {
+            elt[i][stepX] = 16;  elt[i][stepY] = 16;
+          }
+          if (elt[i][effectPattern].charAt(3) == "3") {
+            elt[i][stepX] = 32;  elt[i][stepY] = 32;
+          }
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][stepX] = 0;  elt[i][fixedX] = true;  elt[i][fixedY] = true;
+          }
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][stepY] = 0;  elt[i][fixedX] = true;  elt[i][fixedY] = true;
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            elt[i][fixedX] = false;  elt[i][fixedY] = false;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "I") {
+          if (elt[i][effectPattern].charAt(3) == "1") {
+            elt[i][posStartX] = 40;  elt[i][posStartY] = 40;
+          }
+          if (elt[i][effectPattern].charAt(3) == "2") {
+            elt[i][posStartX] = 80;  elt[i][posStartY] = 80;
+          }
+          if (elt[i][effectPattern].charAt(3) == "3") {
+            elt[i][posStartX] = 160;  elt[i][posStartY] = 160;
+          }
+          elt[i][posEndX] = 1;  elt[i][posEndY] = 1;  elt[i][stepX] = -32767;
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][posY] += elt[i][posStartY];
+            elt[i][stepY] = Math.PI * 3 / 2;
+            elt[i][frame] = 40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][posY] -= elt[i][posStartY];
+            elt[i][stepY] = Math.PI * 1 / 2;
+            elt[i][frame] = 40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            elt[i][posX] -= elt[i][posStartX];
+            elt[i][stepY] = Math.PI * 0 / 2;
+            elt[i][frame] = 40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "4") {
+            elt[i][posX] += elt[i][posStartX];
+            elt[i][stepY] = Math.PI * 2 / 2;
+            elt[i][frame] = 40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "5") {
+            elt[i][posY] += elt[i][posStartY];
+            elt[i][stepY] = Math.PI * 3 / 2;
+            elt[i][frame] = -40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "6") {
+            elt[i][posY] -= elt[i][posStartY];
+            elt[i][stepY] = Math.PI * 1 / 2;
+            elt[i][frame] = -40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "7") {
+            elt[i][posX] -= elt[i][posStartX];
+            elt[i][stepY] = Math.PI * 0 / 2;
+            elt[i][frame] = -40;
+          }
+          if (elt[i][effectPattern].charAt(1) == "8") {
+            elt[i][posX] += elt[i][posStartX];
+            elt[i][stepY] = Math.PI * 2 / 2;
+            elt[i][frame] = -40;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "J") {
+          if (elt[i][effectPattern].charAt(3) == "1") {
+            elt[i][posStartX] = 0;  elt[i][posStartY] = 80;
+          }
+          if (elt[i][effectPattern].charAt(3) == "2") {
+            elt[i][posStartX] = 0;  elt[i][posStartY] = 160;
+          }
+          if (elt[i][effectPattern].charAt(3) == "3") {
+            elt[i][posStartX] = 0;  elt[i][posStartY] = 320;
+          }
+          elt[i][posEndX] = 1;  elt[i][posEndY] = 1;
+          elt[i][stepX] = -32767;  elt[i][stepY] = 0;
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][accelerationY] = 0.99;  elt[i][frame] = 40;
+        } }
+        if (elt[i][effectPattern].charAt(0) == "K") {
+          if (elt[i][effectPattern].charAt(3) == "1") {
+            elt[i][posStartX] = 40;  elt[i][posStartY] = 40;
+          }
+          if (elt[i][effectPattern].charAt(3) == "2") {
+            elt[i][posStartX] = 80;  elt[i][posStartY] = 80;
+          }
+          if (elt[i][effectPattern].charAt(3) == "3") {
+            elt[i][posStartX] = 160;  elt[i][posStartY] = 160;
+          }
+          elt[i][stepX] = -32767;  elt[i][stepY] = 0;
+          if (elt[i][effectPattern].charAt(1) == "1") {
+            elt[i][posEndX] = 13;  elt[i][posEndY] = 12;  elt[i][frame] = 160;
+          }
+          if (elt[i][effectPattern].charAt(1) == "2") {
+            elt[i][posEndX] = 7;  elt[i][posEndY] = 2;  elt[i][frame] = 160;
+          }
+          if (elt[i][effectPattern].charAt(1) == "3") {
+            elt[i][posEndX] = 11;  elt[i][posEndY] = 4;  elt[i][frame] = 160;
+          }
+          if (elt[i][effectPattern].charAt(1) == "4") {
+            elt[i][posEndX] = 7;  elt[i][posEndY] = 4;  elt[i][frame] = 160;
+        } }
+        if (elt[i][effectPattern].charAt(2) == "1") elt[i][intervalTime] = 200;
+        if (elt[i][effectPattern].charAt(2) == "2") elt[i][intervalTime] = 100;
+        if (elt[i][effectPattern].charAt(2) == "3") elt[i][intervalTime] = 50;
+        if ( elt[i][startTime] >= 0 ) setTimeout( "HpbVfxtimer(" + i + ")", elt[i][startTime] );
+} } } }
+
+function HpbVfxtimer(tid) {
+  if (isNC||isN6||isIE) {
+    if (layerobj[tid]) {
+      var func_str;
+      func_str = elt[tid][func] + "( tid, elt[tid], layerobj[tid] )";
+      eval(func_str);
+} } }
+
+function HpbVfxshowobj(obj) {
+  if (obj) {
+    if (isNC) obj.visibility = "show";
+    if (isN6) obj.style.visibility = "visible";
+    if (isIE) obj.visibility = "visible";
+    lastobj = obj;
+} }
+
+function HpbVfxhideobj(obj) {
+  if (obj) {
+    if (isNC) obj.visibility = "hide";
+    if (isN6) obj.style.visibility = "hidden";
+    if (isIE) obj.visibility = "hidden";
+} }
+
+function HpbVfxmoveobj(obj,x,y) {
+  if (obj) {
+    if (isNC) {obj.left=x;obj.top=y;}
+    if (isN6) {obj.style.left=x+"px";obj.style.top=y+"px";}
+    if (isIE) {obj.left=x;obj.top=y;}
+} }
+
+function HpbVfxclipobj(obj,t,r,b,l) {
+  if (obj) {
+    if (isNC) {obj.clip.left=l;obj.clip.top=t;obj.clip.right=r;obj.clip.bottom=b;}
+    if (isN6) obj.style.clip = "rect(" + t + "px," + (r-l) + "px," + (b-t) + "px," + l + "px)";
+    if (isIE) obj.clip = "rect(" + t + "," + r + "," + b + "," + l + ")";
+} }
+
+function HpbVfx0001(tid,et,ob) {
+  var x;  var y;
+  if (ob) {
+    if (ob.init == false) {
+      if (et[stepX] != -32767) ob.stepX = et[stepX] * Math.cos(et[angle]);
+      else ob.stepX = (et[posEndX] - et[posStartX]) / et[frame];
+      if (et[stepY] != -32767) ob.stepY = et[stepY] * Math.sin(et[angle]);
+      else ob.stepY = (et[posEndY] - et[posStartY]) / et[frame];
+      if (ob.stepX > 0 && ob.stepX < 1) ob.stepX = 1;
+      if (ob.stepX < 0 && ob.stepX > -1) ob.stepX = -1;
+      if (ob.stepY > 0 && ob.stepY < 1) ob.stepY = 1;
+      if (ob.stepY < 0 && ob.stepY > -1) ob.stepY = -1;
+      if (et[posStartX] != -32767) ob.x = et[posStartX];
+      else if (ob.stepX > 0) ob.x = 0 - ob.pos_w; else ob.x = ob.innerW - ob.pos_w;
+      if (et[posStartY] != -32767) ob.y = et[posStartY];
+      else if (ob.stepY > 0) ob.y = 0 - ob.pos_h; else ob.y = ob.innerH - ob.pos_h;
+      if (et[posEndX] != -32767) ob.posEndX = et[posEndX];
+      else if (ob.stepX > 0) ob.posEndX = ob.innerW - ob.pos_w; else ob.posEndX = 0 - ob.pos_w;
+      if (et[posEndY] != -32767) ob.posEndY = et[posEndY];
+      else if (ob.stepY > 0) ob.posEndY = ob.innerH - ob.pos_h; else ob.posEndY = 0 - ob.pos_h;
+      HpbVfxshowobj(ob);
+      ob.init = true;  ob.frame = 0;
+    }
+    ob.stepX = ob.stepX * et[accelerationX];
+    if (ob.stepX > 0 && ob.stepX < 1) ob.stepX = 1;
+    if (ob.stepX < 0 && ob.stepX > -1) ob.stepX = -1;
+    ob.stepY = ob.stepY * et[accelerationY];
+    if (ob.stepY > 0 && ob.stepY < 1) ob.stepY = 1;
+    if (ob.stepY < 0 && ob.stepY > -1) ob.stepY = -1;
+    ob.x += ob.stepX;  ob.y += ob.stepY;
+    var endX;  var endY;
+    endX = false;  endY = false;
+    if (ob.stepX > 0) if (ob.x >= ob.posEndX) {endX = true;  ob.x = ob.posEndX;}
+    if (ob.stepX < 0) if (ob.x <= ob.posEndX) {endX = true;  ob.x = ob.posEndX;}
+    if (ob.stepX == 0) endX = true;
+    if (ob.stepY > 0) if (ob.y >= ob.posEndY) {endY = true;  ob.y = ob.posEndY;}
+    if (ob.stepY < 0) if (ob.y <= ob.posEndY) {endY = true;  ob.y = ob.posEndY;}
+    if (ob.stepY == 0) endY = true;
+    HpbVfxmoveobj(ob,Math.round( ob.x ),Math.round(ob.y));
+    if (endX == true && endY == true) {
+      if (et[endVisibility] == false) HpbVfxhideobj(ob);
+      ob.init = false;
+      if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+      else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+    } else setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+} }
+
+function HpbVfx0101(tid,et,ob) {
+  var cl;  var cr;  var ct;  var cb;  var tm;  var x;  var y;
+  if (ob) {
+    if (ob.init == false) {
+      if (et[stepX] != -32767) ob.cs_x = et[stepX]; else ob.cs_x = ob.pos_w / et[frame];
+      if (et[stepY] != -32767) ob.cs_y = et[stepY]; else ob.cs_y = ob.pos_h / et[frame];
+      ob.c_x = 0;  ob.c_y = 0;
+      HpbVfxshowobj(ob);
+      ob.init = true;
+    }
+    tm = false;
+    cl = 0;  cr = ob.pos_w;  ct = 0;  cb = ob.pos_h;
+    x = ob.pos_x;  y = ob.pos_y;
+    if (et[fixedX] == false) {
+      if (ob.cs_x > 0) {
+        ob.c_x += ob.cs_x;
+        if (cr > ob.c_x) {
+          cl = cr - ob.c_x;  tm = true;  x = ob.pos_x - ob.pos_w + ob.c_x;
+      } }
+      if (ob.cs_x < 0) {
+        ob.c_x += ob.cs_x;  cr = ob.c_x * -1;
+        if (cr < ob.pos_w) {
+          tm = true;  x = ob.pos_x + ob.pos_w + ob.c_x;
+        } else cr = ob.pos_w;
+      }
+    } else {
+      if (ob.cs_x > 0) {
+        ob.c_x += ob.cs_x;
+        if (cr > ob.c_x) {cr = ob.c_x;  tm = true;}
+      }
+      if (ob.cs_x < 0) {
+        ob.c_x += ob.cs_x;  cl = ob.c_x * -1;
+        if (cl < ob.pos_w) {tm = true;  cl = ob.pos_w - cl;} else cl = 0;
+    } }
+    if (et[fixedY] == false) {
+      if (ob.cs_y > 0) {
+        ob.c_y += ob.cs_y;
+        if (cb > ob.c_y) {ct = cb - ob.c_y;  tm = true;  y = ob.pos_y - ob.pos_h + ob.c_y;}
+      }
+      if (ob.cs_y < 0) {
+        ob.c_y += ob.cs_y;  cb = ob.c_y * -1;
+        if ( cb < ob.pos_h ) {tm = true;  y = ob.pos_y + ob.pos_h + ob.c_y;} else cb = ob.pos_h;
+      }
+    } else {
+      if (ob.cs_y > 0) {
+        ob.c_y += ob.cs_y;
+        if (cb > ob.c_y) {cb = ob.c_y;  tm = true;}
+      }
+      if (ob.cs_y < 0) {
+        ob.c_y += ob.cs_y;  ct = ob.c_y * -1;
+        if (ct < ob.pos_h) {tm = true;  ct = ob.pos_h - ct;} else ct = 0;
+    } }
+    HpbVfxclipobj(ob,ct,cr,cb,cl);
+    HpbVfxmoveobj(ob,x,y);
+    if (tm) setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+    else {
+      if (et[endVisibility] == false) HpbVfxhideobj(ob);
+      ob.init = false;
+      if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+      else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+} } }
+
+function HpbVfx0201(tid,et,ob) {
+  var cl;  var cr;  var ct;  var cb;  var tm;  var x;  var y;
+  if (ob) {
+    if (ob.init == false) {
+      if (et[stepX] != -32767) ob.cs_x = et[stepX]; else ob.cs_x = ob.pos_w / et[frame];
+      if (et[stepY] != -32767) ob.cs_y = et[stepY]; else ob.cs_y = ob.pos_h / et[frame];
+      ob.c_w = et[posEndX] - et[posStartX];  ob.c_h = et[posEndY] - et[posStartY];
+      ob.c_x = 0;  ob.c_y = 0;
+      HpbVfxshowobj(ob);
+      ob.init = true;
+    }
+    tm = false;
+    cl = 0;  cr = ob.pos_w;  ct = 0;  cb = ob.pos_h;
+    x = et[posStartX];  y = et[posStartY];
+    if (ob.cs_x > 0) {
+      ob.c_x += ob.cs_x;
+      if (ob.c_x < (ob.pos_w - ob.c_w)) {
+        cl = ob.c_x;  cr = cl + ob.c_w;
+        tm = true;
+      } else cl = ob.pos_w - ob.c_w;
+    }
+    if (ob.cs_x < 0) {
+      ob.c_x += ob.cs_x;  cr = ob.pos_w + ob.c_x;
+      if (cr > ob.c_w) {cl = cr - ob.c_w;  tm = true;}
+      else cr = ob.c_w;
+    }
+    if (ob.cs_y > 0) {
+      ob.c_y += ob.cs_y;
+      if (ob.c_y < (ob.pos_h - ob.c_h)) {
+        ct = ob.c_y;  cb = ct + ob.c_h;
+        tm = true;
+      } else ct = ob.pos_h - ob.c_h;
+    }
+    if (ob.cs_y < 0) {
+      ob.c_y += ob.cs_y;  cb = ob.pos_h + ob.c_y;
+      if (cb > ob.c_h) {ct = cb - ob.c_h;  tm = true;}
+      else cb = ob.c_h;
+    }
+    HpbVfxclipobj(ob,ct,cr,cb,cl);
+    x -= cl;  y -= ct;
+    HpbVfxmoveobj(ob,x,y);
+    if (tm) setTimeout( "HpbVfxtimer(" + tid + ")",et[intervalTime]);
+    else {
+      if (et[endVisibility] == false) HpbVfxhideobj(ob);
+      ob.init = false;
+      if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+      else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+} } }
+
+function HpbVfx0301(tid,et,ob) {
+  var x;  var y;  var tx;  var ty;
+  if (ob) {
+    if (ob.init == false) {
+      if (et[stepX] != -32767) ob.step = et[stepX]; else ob.step = (Math.PI * 2) / et[frame];
+      ob.boundX = et[posStartX];  ob.boundY = et[posStartY];
+      ob.angle = 0.0;
+      HpbVfxshowobj(ob);
+      ob.init = true;
+    }
+    tx = Math.cos(ob.angle * et[posEndX]) * ob.boundX;  ty = Math.sin(ob.angle * et[posEndY]) * ob.boundY;
+    if (et[fixedX] != 0) tx = Math.abs(tx) * et[fixedX];
+    if (et[fixedY] != 0) ty = Math.abs(ty) * et[fixedY];
+    x = et[posX];  y = et[posY];
+    x += tx * Math.cos(et[angle]);  y += tx * Math.sin(et[angle]);
+    x += ty * Math.cos(et[angle] + (Math.PI / 2));  y += ty * Math.sin(et[angle] + (Math.PI / 2));
+    HpbVfxmoveobj(ob,Math.round(x),Math.round(y));
+    if (et[accelerationX] != 1.0 || et[accelerationY] != 1.0) {
+      ob.boundX *= et[accelerationX];  ob.boundY *= et[accelerationY];
+      if (ob.boundX < 4  && ob.boundY < 4) {
+        ob.init = false;
+        if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+        else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+      } else {
+        ob.angle += ob.step;
+        setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+      }
+    } else {
+      if (ob.angle >= (2 * Math.PI)) {
+        ob.init = false;
+        if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+        else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+      } else {
+        ob.angle += ob.step;
+        setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+} } } }
+
+function HpbVfx0311(tid,et,ob) {
+  var x;  var y;  var ws;
+  if (ob) {
+    if (ob.init == false) {ob.setp = 0;  HpbVfxshowobj(ob);  ob.init = true;}
+    x = et[posX];  y = et[posY];
+    if (et[fixedX] == true) ws = ob.setp;
+    else {
+      ws = Math.round(Math.random() * 4);
+      if (ws > 3) ws = 0;
+    }
+    if (ws == 1) x += et[stepX];
+    if (ws == 3) x -= et[stepX];
+    if (et[fixedY] == true) ws = ob.setp;
+    else {
+      ws = Math.round(Math.random() * 4);
+      if (ws > 3) ws = 0;
+    }
+    if (ws == 1) y += et[stepY];
+    if (ws == 3) y -= et[stepY];
+    HpbVfxmoveobj(ob,Math.round(x),Math.round(y));
+    ob.setp ++;
+    if (ob.setp >= 4) {
+      ob.init = false;
+      if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+      else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+    } else setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+} }
+
+function HpbVfx0401(tid,et,ob) {
+  var x;  var y;  var tx;  var ty;
+  if (ob) {
+    if (ob.init == false) {
+      if (et[stepX] != -32767) ob.step = et[stepX]; else ob.step = (Math.PI * 2) / et[frame];
+      ob.angle = 0.0;
+      HpbVfxshowobj(ob);
+      ob.init = true;
+    }
+    tx = Math.cos((ob.angle * et[posEndX]) + et[stepY]) * et[posStartX];
+    ty = Math.sin((ob.angle * et[posEndY]) + et[stepY]) * et[posStartY];
+    x = et[posX];  y = et[posY];
+    x += tx * Math.cos(et[angle]);  y += tx * Math.sin(et[angle]);
+    x += ty * Math.cos(et[angle] + (Math.PI / 2));  y += ty * Math.sin(et[angle] + (Math.PI / 2));
+    HpbVfxmoveobj(ob,Math.round(x),Math.round(y));
+    if (Math.abs(ob.angle) >= (2 * Math.PI)) {
+      ob.init = false;
+      if (et[repeat] == true) setTimeout("HpbVfxtimer(" + tid + ")",et[startTime]);
+      else if (et[nextLayerIdx] >= 0) setTimeout("HpbVfxtimer(" + et[nextLayerIdx] + ")",et[nextStartTime]);
+    } else {
+      ob.angle += ob.step;
+      setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+} } }
+
+function HpbVfx0501(tid,et,ob) {
+  if (ob) {
+    if (ob.init == false) {HpbVfxshowobj(ob);  ob.init = true;}
+    var px;  var py;
+    if (isNC) {px = window.pageXOffset;  py = window.pageYOffset;}
+    if (isN6) {px = window.pageXOffset;  py = window.pageYOffset;}
+    if (isIE) {px = document.body.scrollLeft;  py = document.body.scrollTop;}
+    HpbVfxmoveobj(ob,Math.round(px + et[posX]),Math.round(py + et[posY]));
+    setTimeout("HpbVfxtimer(" + tid + ")",et[intervalTime]);
+} }
+//-->
+</script></head>
+<body onload="HpbVfxinit('Layer1','HpbVfx0501','L010',0,0,0);">
+<div style="width : 120px;height : 35px;top : 375px;left : 13px;
+	position : absolute;
+	z-index : 1;
+	visibility : hidden;
+" id="Layer1"><a href="#top"><img src="logo11.gif" width="120" height="35" border="0" alt="PAGE UP "></a></div>
+<p align="center"><b><font color="#ff6699" size="+2"><a name="top" id="top"></a>�������i7���j�@�����\</font></b></p>
+<div align="center">
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#haneda" id="HPB_ROLLOVER1" name="HPB_ROLLOVER1" onmouseout="HpbImgSwap('HPB_ROLLOVER1', 'button11.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER1', 'button114.gif');"><img src="button11.gif" width="100" height="30" border="0" alt="�H�c��`" name="HPB_ROLLOVER1"></a>�@</td>
+      <td><a href="#narita" id="HPB_ROLLOVER2" name="HPB_ROLLOVER2" onmouseout="HpbImgSwap('HPB_ROLLOVER2', 'button2.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER2', 'button23.gif');"><img src="button2.gif" width="100" height="30" border="0" alt="���c��`" name="HPB_ROLLOVER2"></a>�@</td>
+      <td><a href="#chitose" id="HPB_ROLLOVER3" name="HPB_ROLLOVER3" onmouseout="HpbImgSwap('HPB_ROLLOVER3', 'button31.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER3', 'button311.gif');"><img src="button31.gif" width="105" height="30" border="0" alt="�V��΋�` " name="HPB_ROLLOVER3"></a>�@</td>
+      <td><a href="#sendai" id="HPB_ROLLOVER4" name="HPB_ROLLOVER4" onmouseout="HpbImgSwap('HPB_ROLLOVER4', 'button41.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER4', 'button411.gif');"><img src="button41.gif" width="100" height="30" border="0" alt="����`" name="HPB_ROLLOVER4"></a>�@</td>
+      <td><a href="#fukuoka" id="HPB_ROLLOVER5" name="HPB_ROLLOVER5" onmouseout="HpbImgSwap('HPB_ROLLOVER5', 'button51.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER5', 'button511.gif');"><img src="button51.gif" width="100" height="30" border="0" alt="������`" name="HPB_ROLLOVER5"></a>�@</td>
+      <td><a href="#naha" id="HPB_ROLLOVER6" name="HPB_ROLLOVER6" onmouseout="HpbImgSwap('HPB_ROLLOVER6', 'button61.gif');" onmouseover="HpbImgSwap('HPB_ROLLOVER6', 'button611.gif');"><img src="button61.gif" width="100" height="30" border="0" alt="�ߔe��`" name="HPB_ROLLOVER6"></a>�@</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><a name="haneda" id="haneda"></a>�����^�H�c��`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�H�c��`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="14" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�H�c��`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1270</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><b>�@��</b>�@</td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1273</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;07�F20</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F25</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">752</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F20</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">751</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F40</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F40</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1272</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;10�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">753</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;10�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;11�F15</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">754</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;10�F20</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;11�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1275</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;10�F50</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;11�F50</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">756</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;12�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;13�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1279</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;14�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;15�F30</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1276</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;13�F35</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;14�F40</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">755</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;15�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;16�F15</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1278</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;16�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F35</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1281</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;18�F25</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">758</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;18�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">757</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;18�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F25</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1280</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F20</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1283</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F30</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">760</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;21�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">759</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F35</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F40</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1282</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F15</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;21�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�`�k</font></td>
+      <td align="right"><font size="+1">1285</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;21�F00</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+<a name="narita" id="narita"></a>�����^���c��`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">���c��`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="5" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">���c��`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">3116</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><b>�@��</b>�@</td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F45</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">3119</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F45</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">�`�m�`</td>
+      <td align="right"></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1" >&nbsp;15�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;16�F20</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1" >�`�m�`</font></td>
+      <td align="right"></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;10�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">11�F20</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="left" colspan="9">�@</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+<a name="chitose" id="chitose"></a>�D�y�^�V��΋�`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29" align="center">&nbsp;</td>
+      <td height="29" align="center">&nbsp;</td>
+      <td height="29" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center"></td>
+      <td height="29" valign="bottom" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�V��΋�`</td>
+      <td valign="bottom" align="center">&nbsp;</td>
+      <td rowspan="4" bgcolor="#ff9999" align="center">&nbsp;</td>
+      <td height="29" align="center">&nbsp;</td>
+      <td height="29" align="center"></td>
+      <td height="29" align="center">&nbsp;</td>
+      <td height="29" align="center" valign="bottom">�V��΋�`</td>
+      <td height="29" valign="bottom" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom" align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="center" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center"><font size="+0">�`�c�n</font></td>
+      <td align="center"><font size="+1">�@�@89</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><b>�@��</b>�@</td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">�@10�F30�@</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1"><font size="+0">�`�c�n</font></font></td>
+      <td align="center"><font size="+1">�@�@80</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">17�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><b>�@��</b>�@</td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">18�F45</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+<a name="sendai" id="sendai"></a>����`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">����`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="4" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">����`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">3190</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;12�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">13�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">3189</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;13�F50</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">14�F35</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"></td>
+      <td align="right"></td>
+      <td align="right"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td></td>
+      <td></td>
+      <td align="center"></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"></td>
+      <td align="right"></td>
+      <td align="right"></td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td></td>
+      <td></td>
+      <td align="center"></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+�É��^�x�m�R�É���`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�É���`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="4" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�É���`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�e�c�`</font></td>
+      <td align="right"><font size="+1">�@106</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;18�F10</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�e�c�`</font></td>
+      <td align="right"><font size="+1">�@105</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;16�F45</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F40</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+<a name="fukuoka" id="fukuoka"></a>������`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="5" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">�@315</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F45</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;11�F10</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">�@316</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;08�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F15</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">�@319</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;19�F05</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;20�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�`�m�`</font></td>
+      <td align="right"><font size="+1">�@320</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F25</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;18�F35</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p><br>
+<a name="naha" id="naha"></a>����^�ߔe��`</p>
+<blockquote>
+<table>
+  <tbody>
+    <tr>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�ߔe��`</td>
+      <td valign="bottom">&nbsp;</td>
+      <td rowspan="4" bgcolor="#ff9999">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">�ߔe��`</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom">&nbsp;</td>
+      <td height="29" valign="bottom" align="center">������`</td>
+      <td valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right" colspan="9" height="5"><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+      <td align="right" colspan="9"height="5" ><img src="line_yoko1.gif" width="374" height="6" border="0" alt="��">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="+1">�i�s�`</font></td>
+      <td align="right"><font size="+1">�@�@31</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;09�F00</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><b>�@��</b>�@</td>
+      <td align="center">&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;11�F30</font></td>
+      <td align="center">&nbsp;</td>
+      <td align="right"><font size="+1">�i�s�`</font></td>
+      <td align="right"><font size="+1">�@�@38</font></td>
+      <td align="right">&nbsp;</td>
+      <td align="center"><font size="+1">15�F10</font></td>
+      <td align="center">&nbsp;</td>
+      <td><b>�@��</b>�@</td>
+      <td>&nbsp;</td>
+      <td align="center"><font size="+1">&nbsp;17�F20</font></td>
+      <td align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="center">&nbsp;</td>
+      <td align="center">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"></div>
+</blockquote>
+<p align="center"><br>
+<a href="komatsu-hatsu.html"><img src="button13.gif" width="58" height="54" border="0" alt="BACK "></a></p>
+</body>
+</html>
